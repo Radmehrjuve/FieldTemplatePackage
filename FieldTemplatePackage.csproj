@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <PackageType>Template</PackageType>
+	  <PackageVersion>0.0.1-beta.2</PackageVersion>
+	  <PackageId>GreenField.Solution.Templates</PackageId>
+	  <Title>GreenField Solution Templates</Title>
+	  <Authors>Radmehr Vosoughi</Authors>
+	  <Description>Templates to use when creating an application utilizing the GreenField framework.</Description>
+	  <PackageTags>dotnet-new;templates;contoso</PackageTags>
+	  <TargetFramework>net8.0</TargetFramework>
+	  <PackageIcon>Icon.png</PackageIcon>
+
+	  <IncludeContentInPack>true</IncludeContentInPack>
+	  <IncludeBuildOutput>false</IncludeBuildOutput>
+	  <ContentTargetFolders>content</ContentTargetFolders>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <PackageProjectUrl>https://github.com/Radmehrjuve/FieldTemplatePackage</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/Radmehrjuve/FieldTemplatePackage</RepositoryUrl>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="Icon.png" Pack="True" PackagePath="\" />
+		<Content Include="Templates\**\*" Exclude="Templates\**\bin\**;Templates\**\obj\**" />
+		<Compile Remove="**\*" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <None Update="Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

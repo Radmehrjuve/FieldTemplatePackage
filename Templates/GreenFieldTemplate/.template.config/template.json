@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Radmehr Vosoughi",
+  "classifications": [ "Common", "Solution", "GreenField" ],
+  "identity": "GreenField.Default.SolutionTemplate.CSharp",
+  "name": "GreenField Default Solution Template",
+  "shortName": "greenfieldsln",
+  "sourceName": "GreenFieldTemplate",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "namespace": {
+      "type": "parameter",
+      "replaces": "GreenFieldTemplate",
+      "FileRename": "GreenFieldTemplate",
+      "defaultValue": "GreenFieldTemplate"
+    },
+    "dbcontext": {
+      "type": "parameter",
+      "replaces": "DbContextName",
+      "FileRename": "DbContextName"
+    }
+  }
+}
